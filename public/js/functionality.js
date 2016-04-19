@@ -1,9 +1,9 @@
 $(document).ready(function(){
   //console.log("ready!");
   var socket = io.connect();
-  var $messageForm = $('$send-message');
-  var $messageBox = $('message');
-  var $chat = $('chat');
+  var $messageForm = $('#send-message');
+  var $messageBox = $('#message');
+  var $chat = $('#chat');
 
   $messageForm.submit(function(e) {
     e.preventDefault();
