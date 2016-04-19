@@ -1,7 +1,7 @@
 var express = require('express');
 var logger = require('morgan');
 var mongoose = require('mongoose');
-var io = require('socket.io').listen(server);
+var io = require('socket.io').listen(80);
 
 var app = express();
 
