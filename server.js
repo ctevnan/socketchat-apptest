@@ -19,3 +19,9 @@ app.use('/', routes);
 app.listen(PORT, function(){
   console.log("listening on", PORT);
 });
+
+io.sockets.on('connection', function (socket) {
+  socket.on('send message', function (data){
+    io.sockets.emit('new message', data);
+  });
+});
